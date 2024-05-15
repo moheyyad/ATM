@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ATM</title>
+</head>
+<body>
+    <h1>ATM</h1>
+    <div class="form">
+        <input class="input" id="username" type="text" placeholder="أدخل اسم المستخدم">
+        <input class="input" id="password" type="password" placeholder="أدخل كلمة المرور">
+        <input class="btn" id="submit" type="submit" value="متابعة">
+    </div>
+
+    <div class="menu">
+        <a class="btn" id="deposit">أدخل مال للحساب</a>
+        <a class="btn" id="withdraw">سحب مال من الحساب</a>
+        <a class="btn" id="transfer">تحويل مال الى حساب آخر</a>
+        <a class="btn" id="balance">الرصيد الحالي في الحساب</a>
+        <a class="btn" id="exit">الخروج من البرنامج</a>
+    </div>
+
+
+    <div class="depositDiv menuItem">
+        <input class="input" type="number" placeholder="أدخل المبلغ المراد ايداعه">
+        <a class="done btn">إيداع</a>
+    </div>
+
+    <div class="withdrawDiv menuItem">
+        <input class="input" type="number" placeholder="أدخل المبلغ المراد سحبه">
+        <a class="done btn">سحب</a>
+    </div>
+    
+    <div class="transferDiv menuItem">
+        <input class="input" type="text" placeholder="أدخل اسم المستخدم">
+        <input class="input money" type="number" placeholder="أدخل المبلغ">
+        <a class="done btn">تحويل</a>
+    </div>
+    
+    <div class="balanceDiv menuItem">
+        <h1>رصيدك الحالي: <span></span></h1>
+        <a class="btn back">رجوع للقائمة</a>
+    </div>
+    
+
+    <div class="doneDiv menuItem">
+        <h1>تمت العملية بنجاح</h1>
+        <a class="btn back">رجوع للقائمة</a>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
